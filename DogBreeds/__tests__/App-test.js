@@ -9,6 +9,10 @@ import App from '../App';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+test('Check for ticks.', () => {
+     expect('ticks').toMatch(/tick/);
+});
+ 
+test('U is not in here.', () => {
+     expect('here').not.toMatch(/u/);
 });
